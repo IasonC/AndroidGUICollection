@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <androidx.constraintlayout.widget.ConstraintLayout -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+            Hello World!\n\n
+            1. MediaProjection API R/W permission\n
+            2. Activate Accessibility Service (Settings)\n
+            3. Open Target App
+        "
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Storage Permissions"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewTop" />
+
+    <Button
+        android:id="@+id/mediaproj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:text="MediaProj API Permissions"
+        android:layout_below="@id/storage" />
+
+    <Button
+        android:id="@+id/app_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:text="Open Test App"
+        android:layout_below="@id/mediaproj" />
+
+</RelativeLayout>
+
+<!-- </androidx.constraintlayout.widget.ConstraintLayout> -->
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:title="GFG | Permission Example"
+        app:titleTextColor="@android:color/white"
+        android:layout_height="?android:attr/actionBarSize"/>
+
+    <Button
+        android:id="@+id/storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Storage"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout> -->
