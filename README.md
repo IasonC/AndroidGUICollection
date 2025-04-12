@@ -1,9 +1,11 @@
 # Automated Data Collection Tools for Android GUIs
 _Chaimalas* and Vyšniauskas* and Brostow, EXPLORER: Robust Collection of Interactable GUI Elements, 2025_ [*Equal]
 
-In the world of GUI Automation, collecting and labelling quality and realistic GUI usability data at scale is a challenging task, particularly given that many benchmarking datasets (e.g. RICO, VINS, etc.) are gathered by expensive crowd-sourcing. Here, we provide Android tooling written in Kotlin, in order to automatically traverse any GUI application in modern Android devices and automatically collect GUI screenshots and corresponding ground-truth labels for the following downstream GUI Automation tasks:
+In the world of GUI Automation, collecting and labelling quality and realistic GUI usability data at scale is a challenging task, particularly given that many benchmarking datasets (e.g. RICO, VINS, etc.) are gathered by expensive crowd-sourcing. In this repository, we provide Android tooling written in Kotlin, in order to automatically traverse any GUI application in modern Android devices and automatically collect GUI screenshots and corresponding ground-truth labels for the following downstream GUI Automation tasks:
 - **Interactable Detection**: GUI screenshots with labelled bounding boxes for tappable elements, used to train tappability/clickability detector models (e.g. FCOS, YOLO, RetinaNet, Faster R-CNN)
 - **Screen Similarity**: GUI screenshots labelled into distinct groups, used to train similarity discriminator models
+
+We train Machine Vision models and implement these downstream tasks in our main "Explorer" repository, available at [https://github.com/varnelis/Explorer](https://github.com/varnelis/Explorer).
 
 ## Data Collection Code
 
@@ -56,3 +58,5 @@ If ```SCREENSIM == true```, the actuation of the target app is:
 ## Citation
 If you utlize our Android-based data collection and labelling in your GUI Automation research, please consider citing our work:
 ```<stump ArXiv URL>```
+
+Also refer to our main ["Explorer" repository](https://github.com/varnelis/Explorer) for the paper implementation.
