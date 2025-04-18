@@ -56,7 +56,15 @@ If ```SCREENSIM == true```, the actuation of the target app is:
 3. Steps 3-5 same as case of ```SCREENSIM == false``` above.
 
 ## Citation
-If you utlize our Android-based data collection and labelling in your GUI Automation research, please consider citing our work:
-```<stump ArXiv URL>```
+If you utilize our Android-based data collection and labelling in your GUI Automation research, please consider citing our work:
+```@misc{chaimalas2025explorerrobustcollectioninteractable,
+      title={Explorer: Robust Collection of Interactable GUI Elements}, 
+      author={Iason Chaimalas and Arnas Vyšniauskas and Gabriel Brostow},
+      year={2025},
+      eprint={2504.09352},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2504.09352}, 
+}```
 
 Also refer to our main ["Explorer" repository](https://github.com/varnelis/Explorer) for the paper implementation.
