@@ -56,7 +56,7 @@ If ```SCREENSIM == true```, the actuation of the target app is:
 3. Steps 3-5 same as case of ```SCREENSIM == false``` above.
 
 ## Citation
-If you utlize our Android-based data collection and labelling in your GUI Automation research, please consider citing our work:
+If you utilize our Android-based data collection and labelling in your GUI Automation research, please consider citing our work:
 ```<stump ArXiv URL>```
 
 Also refer to our main ["Explorer" repository](https://github.com/varnelis/Explorer) for the paper implementation.
